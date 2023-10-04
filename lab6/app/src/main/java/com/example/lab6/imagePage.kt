@@ -40,7 +40,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 
 @Composable
-fun menuLayout(navController: NavController){
+fun imagePageLayout(navController: NavController){
     Image(
         painter = painterResource(id = R.drawable.menu),
         contentDescription = "Login",
@@ -52,22 +52,12 @@ fun menuLayout(navController: NavController){
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Button(
-            modifier = Modifier
-                .width(190.dp)
-                .height(60.dp),
-            colors = ButtonDefaults.buttonColors(
-                containerColor = Color(0xfff28482)
-            ),
-            onClick = {}
-        ) {
-            Text(text = "Show Image")
-        }
+
     }
 }
 
 @Preview
 @Composable
-fun menuPreview() {
+fun imagePreview() {
     NavigationApp()
 }

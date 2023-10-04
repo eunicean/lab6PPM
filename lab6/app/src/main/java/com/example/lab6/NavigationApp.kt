@@ -12,5 +12,8 @@ fun NavigationApp(){
         composable(route = AppScreens.MenuScreen.route){
             menuLayout(navController)
         }
+        composable(route = AppScreens.ImageScreen.route){
+            imagePageLayout(navController)
+        }
     }
 }
